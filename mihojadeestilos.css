@@ -1,0 +1,26 @@
+#cabeceraprincipal {
+    background-color: blue;
+}
+
+#navegacionprincipal {
+    background-color: rgb(255, 0, 0);
+}
+
+#barralateral {
+    background-color: rgb(30, 255, 0);
+    float: left;
+    height: 1080px;
+}
+
+#contenidoprincipal {
+    background-color: rgb(0, 204, 255);
+}
+
+#pieprincipal {
+    background-color: rgb(229, 255, 0);
+}
+
+li {
+    background-color: burlywood;
+    display: inline;
+}

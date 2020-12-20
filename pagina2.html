@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <style>
+        p[name^="mis"] {
+            color: crimson;
+            /*
+                name^="mis" : Nombres que comienzan con "mis"
+                name*="mis" : Nombres que contienen "mis"
+                name$="mis" : Nombres que terminan con "mis"
+            */
+        }
+        p:nth-child(2) {
+            color: darkmagenta;
+            /*
+                p:nth-child(odd) : Aplica el formato a los hijos impares
+                p:nth-child(even) : Aplica el formato a los hijos pares
+                p:first-child : Aplica el formato al primer hijo
+                p:last-child : Aplica el formato al último hijo
+                p:only-child : Aplica el formato al primer hijo
+            */
+        }
+        #principal {
+            width: 500px;
+            /* background-color: darkslateblue; */
+            text-align: center;
+            margin: 15px auto;
+            padding: 15px;
+            border: 3px red solid;
+            border-radius: 15px 25px 5px 40px;
+            box-shadow: rgb(235, 172, 172) 7px 7px 10px;
+            
+            /* background: -moz-linear-gradient(bottom, #00F, #3FF); */ /* Mozzila y Firefox */
+            /* background: -webkit-linear-gradient(top, #00F 70%, #3FF); */ /* Chrome */
+            /* background: -ms-linear-gradient(left, #00F, #3FF); */ /* Internet Explorer */
+            /* background: -o-linear-gradient(right, #00F, #3FF); */ /* Opera */
+
+            /* background: -webkit-radial-gradient(center, circle, #00F 30%, #3FF); */ /* centrado y circular */
+            background: -webkit-radial-gradient(center, ellipse, #3FF 20%, #00F); /* centrado y elipse */
+
+            outline: royalblue dashed 2px;
+            outline-offset: 5px;
+
+            -webkit-transform: scale(-1,1);
+            -webkit-transform: rotate(5deg);
+
+            -webkit-transition: -webkit-transform 1s ease 0.2s;
+        }
+        #principal:hover {
+            -webkit-transform: skew(5deg);
+        }
+        #titulo {
+            font: bold 100px 'miestilodefuente';
+            text-shadow: rgb(240, 210, 177) 3px 3px 5px;
+            color: rgba(252, 5, 5, 0.5); /* aplica transparencia al color */
+        }
+        @font-face {
+            font-family: 'miestilodefuente';
+            src: url('harry-potter.ttf');
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <p name="miselementos">Hola</p>
+    <p name="misestilos">Adios</p>
+    <p>Febrero</p>
+    -->
+    <header id="principal">
+        <span id="titulo">
+            Estilos css3
+        </span>
+    </header>
+</body>
+</html>
