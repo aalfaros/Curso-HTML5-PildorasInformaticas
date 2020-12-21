@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos HTML5</title>
+    <script>
+        var flores;
+        function tipoflor() {
+            alert('Flor de Loto')
+        }
+        function manejaflor() {
+            var flores = document.querySelectorAll("img");
+            for (i=0;i<flores.length;i++) {
+                flores[i].width = 200;
+                flores[i].height = 200;
+                flores[i].addEventListener("click", tipoflor, false);
+            }
+            flores[0].addEventListener("mouseover", function(){flores[0].width=225;flores[0].height=225;}, false);
+            flores[0].addEventListener("mouseout", function(){flores[0].width=200;flores[0].height=200;}, false);
+
+            flores[1].addEventListener("mouseover", function(){flores[1].width=225;flores[1].height=225;}, false);
+            flores[1].addEventListener("mouseout", function(){flores[1].width=200;flores[1].height=200;}, false);
+
+            flores[2].addEventListener("mouseover", function(){flores[2].width=225;flores[2].height=225;}, false);
+            flores[2].addEventListener("mouseout", function(){flores[2].width=200;flores[2].height=200;}, false);
+
+            flores[3].addEventListener("mouseover", function(){flores[3].width=225;flores[3].height=225;}, false);
+            flores[3].addEventListener("mouseout", function(){flores[3].width=200;flores[3].height=200;}, false);
+
+        }
+        // function crecer() {
+        //     flores.width = 225;
+        //     flores.height = 225;
+        // }
+        // function menguar() {
+        //     flores.width = 200;
+        //     flores.height = 200;
+        // }
+        // window.onload = manejaflor;
+        window.addEventListener("load",manejaflor,false);
+    </script>
+</head>
+<body>
+    <img src="Imagenes/flor-de-loto.jpg" alt="">&nbsp;&nbsp;
+    <img src="Imagenes/flor-de-loto.jpg" alt="">&nbsp;&nbsp;
+    <img src="Imagenes/flor-de-loto.jpg" alt="">&nbsp;&nbsp;
+    <img src="Imagenes/flor-de-loto.jpg" alt="">
+</body>
+</html>

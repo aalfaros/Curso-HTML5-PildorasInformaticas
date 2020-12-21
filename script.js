@@ -7,7 +7,14 @@ function ejecuta() {
     // document.getElementsByClassName('alerta')[i].onclick = saludo;
     // }
 
-    document.querySelector(".alerta").onclick = saludo;
+    // document.querySelector("#principal p:last-child").onclick = saludo;
+
+
+    var elementos = document.querySelectorAll("#principal p, span");
+
+    for (i=0;i<elementos.length;i++) {
+        elementos[i].onclick = saludo;
+    }
 }
 
 function saludo() {
